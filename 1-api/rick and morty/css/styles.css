@@ -1,0 +1,73 @@
+.navbar {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+  font-size: 35px;
+  font-family: 'Comforter', cursive;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background: teal;
+  background: -webkit-linear-gradient(to right, rgb(0,128,128), lightSeaGreen);
+  background: linear-gradient(to right, rgb(0,136,130), #096194);
+}
+
+.card {
+  width: 18rem;
+  /* 16px *  18*/
+}
+
+.btn-card-secondary {
+  background: linear-gradient(90deg, #eb0d87, #e07eb4);
+  color: white;
+}
+
+.btn-card-secondary:hover {
+  color: rgb(24, 44, 44);
+}
+
+.card-personaje {
+  background-color: lawngreen;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-top: 15rem;
+  padding: 3rem 0rem 0rem 0rem;
+}
+
+.personaje {
+  height: 210px;
+  width: 210px;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  z-index: 1;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  left: -50px;
+  top: 10px;
+  transform: translateY(-50%);
+}
+
+.personaje img {
+  height: 200px;
+  width: 200px;
+  top: 2%;
+  border-radius: 100%;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+}
+
+.cyan {
+  background-color: cyan;
+  color: grey;
+}
+
+.palevioletred {
+  background-color: palevioletred;
+  color: gray;
+}
+
+.blueviolet {
+  background-color: blueviolet;
+  color: gray;
+}
