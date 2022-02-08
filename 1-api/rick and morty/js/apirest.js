@@ -49,6 +49,9 @@ cardCharacter = (character) => {
   titleCharacter.classList.add('card-title', 'text-center');
   btnByIdCharacter.classList.add('btn','btn-secondary', 'mb-2');
 
+  //añadiendo el href
+  btnByIdCharacter.href = `personajes.html?id=${character.id}`;
+
   // console.log(character.image);
   titleCharacter.appendChild(nameCharacter);
   btnByIdCharacter.appendChild(textButtonCharacter);

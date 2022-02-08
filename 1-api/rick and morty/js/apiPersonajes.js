@@ -1,4 +1,4 @@
-const nameCharacter = document.querySelector('h5');
+const nameCharacter = document.querySelector('h1');
 const imgCard = document.querySelector('img');
 const footerCard = document.querySelector('.card-footer');
 const cardText = document.querySelector('.card-text');
@@ -20,3 +20,19 @@ const getCharacterById = async(id) => {
     return data;
 }
 
+getCharacterById(id).then(data => {
+    nameCharacter.innerText = data.name;
+    imgCard.src = data.image;
+    footerCard.innerText = data.status;
+    if (data.status === 'Alive') {
+        footerCard.classList.add('cyan');
+    } else if (data.status === 'Dead') {
+        footerCard.classList.add('palevioletred');
+    } else {
+        footerCard.classList.add('blueviolet');
+    }
+
+    cardText.innerText = "Specie: " + data.species;
+    parrafoGenero.innerText = "Gender: " + data.gender;
+    parrafoLocation.innerText = "Location: " + data.location.name;
+}).catch(err => err);
